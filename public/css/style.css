@@ -1347,7 +1347,7 @@ textarea {
   flex-wrap: wrap;
   padding: 150px 0;
   color: #fff;
-  background: #161619;
+  background: #a93226;
 }
 .intro .col-lg-7 {
   padding-left: 10%;
@@ -1409,7 +1409,7 @@ textarea {
   content: "";
   width: 100%;
   height: 100px;
-  background: #161619;
+  background: #a93226;
   position: absolute;
   left: 0;
   top: 0;
@@ -1502,7 +1502,7 @@ textarea {
   transition: 0.25s ease-in-out;
 }
 .icon-content-block .content-block.selected {
-  background: #161619;
+  background: #a93226;
   box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.3);
 }
 .icon-content-block .content-block.selected:before {
@@ -1542,7 +1542,7 @@ textarea {
 }
 
 .icon-content-block .content-block:hover {
-  background: #161619 !important;
+  background: #a93226 !important;
   box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.3);
   position: relative;
 }
@@ -1564,7 +1564,7 @@ textarea {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  padding: 150px 0;
+  /* padding: 150px 0; */
   background: #fff;
 }
 .text-content-block .col-md-4 {
@@ -1648,9 +1648,10 @@ textarea {
   display: flex;
   flex-wrap: wrap;
   padding: 100px 80px;
-  background: #75dab4;
-  color: #222327;
+  background: #a93226;
+  color: #ffffff;
 }
+
 .testimonials .testimonial blockquote {
   font-size: 21px;
   line-height: 1.7;
@@ -1782,7 +1783,7 @@ textarea {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  padding: 150px 0;
+  /* padding: 150px 0; */
   background: #222327;
   color: #fff;
 }
@@ -1913,7 +1914,7 @@ textarea {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  padding: 100px 0;
+  padding: 80px 0;
   background: #fff;
 }
 .blog .col-lg-9 {
@@ -2387,6 +2388,7 @@ textarea {
   color: #fff;
   background: url(../images/footer-bg.png) top center no-repeat;
   background-size: 80% auto;
+  background-color: #a93226;
   /* z-index: -1; */
 }
 .footer ul {

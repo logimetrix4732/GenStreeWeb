@@ -2,8 +2,6 @@ import React, { useEffect } from "react";
 import WOW from "wowjs";
 import Splitting from "splitting";
 import NavBar from "../components/NavBar";
-import Footer from "../components/Footer";
-import Clients from "../components/Clients";
 import Dashboard from "../components/Dashboard";
 import IntroAbout from "../components/IntroAbout";
 import IntroImage from "../components/IntroImage";
@@ -105,9 +103,7 @@ const Home = () => {
         <IntroImage />
         <WeAreAbleToDo />
         <WorksImages />
-        <Clients />
       </main>
-      <Footer />
     </React.Fragment>
   );
 };

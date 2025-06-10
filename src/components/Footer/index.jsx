@@ -33,23 +33,27 @@ const Footer = () => {
                 </a>
               </li>
             </ul>
-            <h6>LET'S HAVE A TALK ABOUT YOUR PROJECT.</h6>
-            <h2>
-              Need more information or want <br />
-              to get in touch?
-            </h2>
+            <h6>Let’s Talk Vision. Let’s Build the Future.</h6>
+            <p style={{ fontSize: "30px" }}>
+              Have a research query, collaboration idea, or want to license one
+              of our data insights? We’re open to partnerships, press, research
+              leads, and bold conversations.
+            </p>
             <a href="#" className="link">
-              Get in touch
+              Get in touch or email us at contact@genstree.com
             </a>{" "}
           </div>
           {/* end col-12 */}
           <div className="col-12">
             <div className="footer-bar">
               <span className="copyright">
-                © 2022 Tourog | All Rights Reserved
+                © 2025 GenStree AI LLP. All rights reserved.
               </span>{" "}
               <span className="creation">
-                Site created by <a href="#">Themezinho</a>
+                Site created by{" "}
+                <a href="https://logimetrix.co.in" target="_blank">
+                  Crafted with precision by Logimetrix Tech Solution
+                </a>
               </span>{" "}
             </div>
             {/* end footer-bar */}

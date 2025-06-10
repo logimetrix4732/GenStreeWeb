@@ -4,20 +4,14 @@ import video02 from "../assets/videos/video02.mp4";
 import WOW from "wowjs";
 import Splitting from "splitting";
 import "odometer/themes/odometer-theme-default.css";
-import Odometer from "odometer";
-import WeAreAbleToDo from "../components/WeAreAbleToDo";
-
+import aboutImg from "../assets/images/aboutImg.png";
+import logo from "../assets/images/logo.jpg";
+import logo01 from "../assets/images/logo01.jpg";
+import AboutSolution2 from "../components/SolutionStoriesComponents/AboutSolution2";
 const Studio = () => {
   const sectionRef = useRef(null);
   const odometers = useRef([]);
   const [visible, setVisible] = useState(false);
-
-  const stats = [
-    { count: 14, label: "Days", title: "CASE RESEARCH" },
-    { count: 24, label: "Hours", title: "UX PROTYPES" },
-    { count: 3, label: "Months", title: "UI DESIGNS" },
-    { count: 90, label: "Days", title: "FINAL LAUNCH" },
-  ];
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -37,25 +31,6 @@ const Studio = () => {
     return () => observer.disconnect();
   }, []);
 
-  useEffect(() => {
-    if (visible) {
-      odometers.current.forEach((el, index) => {
-        if (el) {
-          const od = new Odometer({
-            el: el,
-            value: 0,
-            format: "(d)",
-            theme: "default",
-          });
-
-          // Delay for smooth rendering
-          setTimeout(() => {
-            od.update(stats[index].count);
-          }, 300);
-        }
-      });
-    }
-  }, [visible]);
   useEffect(() => {
     new WOW.WOW().init();
     Splitting();
@@ -184,51 +159,40 @@ const Studio = () => {
           <div className="container">
             <div className="row">
               <div className="col-12 wow" data-splitting="">
-                <h3 className="section-title">
-                  BUILDING TECH SOLUTIONS <br />
-                  WITH PURPOSE & INCLUSION
-                </h3>
+                <h3 className="section-title">Building Tech with Purpose</h3>
               </div>
               {/* end col-12 */}
               <div className="col-12 wow" data-splitting="">
                 <h5>
-                  We co-create digital platforms that empower, inspire, and
-                  uplift—blending innovation with empathy to deliver meaningful
-                  impact.
+                  GenStree AI LLP is built on the belief that inclusive
+                  technology leads to scalable, sustainable impact. We empower
+                  women to lead with vision — not just in labs or boardrooms,
+                  but across every community we serve.
                 </h5>
               </div>
+              <AboutSolution2 />
               {/* end col-12	 */}
               <div className="col-lg-3 col-md-6 wow" data-splitting="">
                 <small>01</small>
                 <h6>DISCOVER</h6>
                 <p>
-                  We research real challenges, especially those impacting women,
-                  and align technology to solve them effectively.
+                  Real challenges in education, governance, and infrastructure
                 </p>
               </div>
               <div className="col-lg-3 col-md-6 wow" data-splitting="">
                 <small>02</small>
                 <h6>IDEATE</h6>
-                <p>
-                  Our team blends creativity with purpose—turning ideas into
-                  inclusive, scalable digital concepts.
-                </p>
+                <p>Collaboratively design tech-forward ideas</p>
               </div>
               <div className="col-lg-3 col-md-6 wow" data-splitting="">
                 <small>03</small>
                 <h6>DESIGN</h6>
-                <p>
-                  With a strong focus on user-centric design, we create
-                  interfaces that are simple, accessible, and powerful.
-                </p>
+                <p>Scalable digital systems with empathy at the core</p>
               </div>
               <div className="col-lg-3 col-md-6 wow" data-splitting="">
                 <small>04</small>
                 <h6>BUILD</h6>
-                <p>
-                  We turn prototypes into real, impactful products—bringing
-                  ideas to life through modern, scalable development.
-                </p>
+                <p>Smart, deployable tools that create measurable change</p>
               </div>
             </div>
           </div>
@@ -244,7 +208,7 @@ const Studio = () => {
                     <div className="swiper-slide">
                       <figure className="reveal-effect masker wow">
                         {" "}
-                        <img src="images/office01.jpg" alt="Image" />
+                        <img src={aboutImg} alt="Image" />
                         <figcaption>
                           <h6> HEADQUARTOR OF TOUROG</h6>
                         </figcaption>
@@ -285,26 +249,8 @@ const Studio = () => {
           {/* end container */}
         </section>
         {/* end intro-image */}
-        <section className="process" ref={sectionRef}>
-          <div className="container">
-            <div className="row">
-              {stats.map((stat, index) => (
-                <div className="col-lg-3 col-md-6" key={index}>
-                  <span
-                    className="odometer"
-                    ref={(el) => (odometers.current[index] = el)}
-                  >
-                    0
-                  </span>
-                  <span className="symbol">{stat.label}</span>
-                  <small>{stat.title}</small>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
+
         {/* end process */}
-        <WeAreAbleToDo />
 
         {/* end icon-content-block */}
         <section className="testimonials">
@@ -317,62 +263,17 @@ const Studio = () => {
                       <div className="testimonial wow" data-splitting="">
                         <blockquote>
                           {" "}
-                          Collaborating with Genstree was a game-changer. Their
-                          focus on inclusivity and innovation helped us reach a
-                          broader, more diverse audience.
+                          GenStree was a game-changer. They helped us build a
+                          tech-first model that was not only scalable — but
+                          sensitive to real social contexts. It’s rare to find a
+                          team so tuned into both innovation and inclusion.
                         </blockquote>
                         <div className="reviewer">
                           {" "}
-                          <img src="images/team01.jpg" alt="Image" />
+                          <img src="images/team02.jpg" alt="Image" />
                           <div className="reviewer-infos">
-                            <h6>Richa Rai</h6>
+                            <h6>Richa Rai, Policy Researcher</h6>
                             <small>Founder, WIT Collective</small>{" "}
-                          </div>
-                          {/* end reviewer-infos */}
-                        </div>
-                        {/* end reviewers */}
-                      </div>
-                      {/* end testimonial */}
-                    </div>
-                    {/* end swiper-slide */}
-                    <div className="swiper-slide">
-                      <div className="testimonial">
-                        <blockquote>
-                          {" "}
-                          We work closely with your development team.
-                          markettting profissionals and stakeholder to design
-                          and develop UX and UI that make your website.
-                          application or software a joy to use{" "}
-                        </blockquote>
-                        <div className="reviewer">
-                          {" "}
-                          <img src="images/team01.jpg" alt="Image" />
-                          <div className="reviewer-infos">
-                            <h6>Marcus James</h6>
-                            <small>IBIS HOTEL MANAGER</small>{" "}
-                          </div>
-                          {/* end reviewer-infos */}
-                        </div>
-                        {/* end reviewers */}
-                      </div>
-                      {/* end testimonial */}
-                    </div>
-                    {/* end swiper-slide */}
-                    <div className="swiper-slide">
-                      <div className="testimonial">
-                        <blockquote>
-                          {" "}
-                          We work closely with your development team.
-                          markettting profissionals and stakeholder to design
-                          and develop UX and UI that make your website.
-                          application or software a joy to use{" "}
-                        </blockquote>
-                        <div className="reviewer">
-                          {" "}
-                          <img src="images/team01.jpg" alt="Image" />
-                          <div className="reviewer-infos">
-                            <h6>Marcus James</h6>
-                            <small>IBIS HOTEL MANAGER</small>{" "}
                           </div>
                           {/* end reviewer-infos */}
                         </div>
@@ -391,11 +292,11 @@ const Studio = () => {
               {/* end col-6 */}
               <div className="col-lg-6 wow" data-splitting="">
                 <h3 className="section-title">
-                  STUDIO PROUD
+                  GENSTREE BUILDS
                   <br />
-                  IS QUALITY OF
+                  TECH TO EMPOWER
                   <br />
-                  PARTNERS
+                  CHANGE
                 </h3>
                 <a href="#" />{" "}
               </div>
@@ -586,40 +487,13 @@ const Studio = () => {
               <div className="col-lg-7">
                 <ul>
                   <li className="reveal-effect masker wow">
-                    {" "}
-                    <img src="images/logo01.png" alt="Image" />{" "}
+                    <img src="" alt="Image" />
                   </li>
                   <li className="reveal-effect masker wow">
-                    {" "}
-                    <img src="images/logo02.png" alt="Image" />{" "}
+                    <img src={logo01} alt="Image" />
                   </li>
                   <li className="reveal-effect masker wow">
-                    {" "}
-                    <img src="images/logo03.png" alt="Image" />{" "}
-                  </li>
-                  <li className="reveal-effect masker wow">
-                    {" "}
-                    <img src="images/logo04.png" alt="Image" />{" "}
-                  </li>
-                  <li className="reveal-effect masker wow">
-                    {" "}
-                    <img src="images/logo05.png" alt="Image" />{" "}
-                  </li>
-                  <li className="reveal-effect masker wow">
-                    {" "}
-                    <img src="images/logo06.png" alt="Image" />{" "}
-                  </li>
-                  <li className="reveal-effect masker wow">
-                    {" "}
-                    <img src="images/logo07.png" alt="Image" />{" "}
-                  </li>
-                  <li className="reveal-effect masker wow">
-                    {" "}
-                    <img src="images/logo08.png" alt="Image" />{" "}
-                  </li>
-                  <li className="reveal-effect masker wow">
-                    {" "}
-                    <img src="images/logo09.png" alt="Image" />{" "}
+                    <img src={logo} alt="Image" />
                   </li>
                 </ul>
               </div>
@@ -632,65 +506,7 @@ const Studio = () => {
         {/* end clients */}
       </main>
       {/* end main */}
-      <footer className="footer">
-        <div className="container">
-          <div className="row">
-            <div className="col-12">
-              <ul>
-                <li>
-                  <a href="#">
-                    <i className="fab fa-facebook-f" />
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i className="fab fa-twitter" />
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i className="fab fa-linkedin-in" />
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i className="fab fa-google-plus-g" />
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i className="fab fa-youtube" />
-                  </a>
-                </li>
-              </ul>
-              <h6>LET’S HAVE A TALK ABOUT YOUR PROJECT.</h6>
-              <h2>
-                Need more information or want <br />
-                to get in touch?
-              </h2>
-              <a href="#" className="link">
-                Get in touch
-              </a>{" "}
-            </div>
-            {/* end col-12 */}
-            <div className="col-12">
-              <div className="footer-bar">
-                {" "}
-                <span className="copyright">
-                  © 2022 Tourog | All Rights Reserved
-                </span>{" "}
-                <span className="creation">
-                  Site created by <a href="#">Themezinho</a>
-                </span>{" "}
-              </div>
-              {/* end footer-bar */}
-            </div>
-            {/* end col-12 */}
-          </div>
-          {/* end row */}
-        </div>
-        {/* end container */}
-      </footer>
+
       {/* end footer */}
       {/* JS FILES */}
     </>

@@ -1,6 +1,7 @@
 import React from "react";
 import NavBar from "../components/NavBar";
 import video02 from "../assets/videos/video02.mp4";
+import AboutSolution from "../components/SolutionStoriesComponents/AboutSolution";
 const ShowCase = () => {
   return (
     <>
@@ -150,7 +151,12 @@ const ShowCase = () => {
           {/* end inner */}
         </header>
         {/* end page-header */}
-        <section className="works">
+        <section
+          className="works"
+          style={{ border: "1px solid red", background: "white" }}
+        >
+          <AboutSolution />
+
           <ul>
             <li>
               <figure className="reveal-effect masker wow">
@@ -335,65 +341,6 @@ const ShowCase = () => {
         {/* end clients */}
       </main>
       {/* end main */}
-      <footer className="footer">
-        <div className="container">
-          <div className="row">
-            <div className="col-12">
-              <ul>
-                <li>
-                  <a href="#">
-                    <i className="fab fa-facebook-f" />
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i className="fab fa-twitter" />
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i className="fab fa-linkedin-in" />
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i className="fab fa-google-plus-g" />
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i className="fab fa-youtube" />
-                  </a>
-                </li>
-              </ul>
-              <h6>LET’S HAVE A TALK ABOUT YOUR PROJECT.</h6>
-              <h2>
-                Need more information or want <br />
-                to get in touch?
-              </h2>
-              <a href="#" className="link">
-                Get in touch
-              </a>{" "}
-            </div>
-            {/* end col-12 */}
-            <div className="col-12">
-              <div className="footer-bar">
-                {" "}
-                <span className="copyright">
-                  © 2022 Tourog | All Rights Reserved
-                </span>{" "}
-                <span className="creation">
-                  Site created by <a href="#">Themezinho</a>
-                </span>{" "}
-              </div>
-              {/* end footer-bar */}
-            </div>
-            {/* end col-12 */}
-          </div>
-          {/* end row */}
-        </div>
-        {/* end container */}
-      </footer>
       {/* end footer */}
       {/* JS FILES */}
     </>

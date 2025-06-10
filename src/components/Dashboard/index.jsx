@@ -1,12 +1,11 @@
-import React from "react";
-import slide01 from "../../assets/images/slide01.jpg";
-import slide02 from "../../assets/images/slide02.jpg";
 import video01 from "../../assets/videos/video01.mp4";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import dashboard from "../../assets/images/dashboard1.png";
+import dashboard4 from "../../assets/images/dashboard4.png";
 const Dashboard = () => {
   return (
     <header className="slider">
@@ -27,7 +26,7 @@ const Dashboard = () => {
           delay: 4000,
           disableOnInteraction: false,
         }}
-        className="swiper-container gallery-top"
+        className="swiper-container"
         onSlideChange={(swiper) => {
           // Update preview titles
           const nextSlideIndex =
@@ -47,7 +46,7 @@ const Dashboard = () => {
           <div
             className="swiper-slide"
             style={{
-              backgroundImage: `url(${slide01})`,
+              backgroundImage: `url(${dashboard})`,
             }}
           >
             <div className="slide-content">
@@ -68,7 +67,7 @@ const Dashboard = () => {
         <SwiperSlide>
           <div
             className="swiper-slide"
-            style={{ backgroundImage: `url(${slide02})` }}
+            style={{ backgroundImage: `url(${dashboard4})` }}
           >
             <div className="slide-content">
               <span className="title">EDITORIAL</span>

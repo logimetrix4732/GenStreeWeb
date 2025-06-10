@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import logo from "../../assets/images/logo.png";
+import logoWeb from "../../assets/images/logoWeb1.png";
 const NavBar = () => {
   const [isNavigationOpen, setIsNavigationOpen] = useState(false);
   const [isEqualizerPaused, setIsEqualizerPaused] = useState(false);
@@ -105,20 +105,16 @@ const NavBar = () => {
         <div className="inner">
           <ul data-splitting="">
             <li>
-              <a href="/studio">About Us</a>
+              <a href="/aboutUs">About Us</a>
               <small>Who we are</small>
             </li>
             <li>
-              <a href="/studio">What We Do</a>
+              <a href="/solution">Solutions & Stories</a>
               <small>Explore our expertise</small>
             </li>
             <li>
-              <a href="/showCase">Newsletter</a>
+              <a href="/GenVoice">GenVoice</a>
               <small>Latest insights & updates</small>
-            </li>
-            <li>
-              <a href="/blog">BLOG</a>
-              <small>Thoughts & stories</small>
             </li>
             <li>
               <a href="/contactUs">CONTACT</a>
@@ -132,7 +128,17 @@ const NavBar = () => {
       <aside className="left-side">
         <div className="logo">
           <a href="/">
-            <img src={logo} alt="Image" />
+            <img
+              src={logoWeb}
+              alt="Image"
+              style={{
+                maxHeight: "100px",
+                maxWidth: "100%",
+                height: "auto",
+                width: "auto",
+                borderRadius: "50%",
+              }}
+            />
           </a>
         </div>
         {/* end logo */}
