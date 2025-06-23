@@ -2,7 +2,8 @@ import React, { useEffect } from "react";
 import "./AboutSolution.css";
 import WOW from "wowjs";
 import Splitting from "splitting";
-const AboutSolution = () => {
+
+const AboutSolution = ({ aboutSolutionData, hidePurpleBox = false }) => {
   useEffect(() => {
     new WOW.WOW().init();
     Splitting();
@@ -10,36 +11,68 @@ const AboutSolution = () => {
       document.body.classList.remove("no-scroll");
     };
   }, []);
+
+  const {
+    image,
+    purpleText,
+    heading,
+    subHeading,
+    problems,
+    solutions,
+    desc,
+    soluDesc,
+  } = aboutSolutionData;
+
   return (
     <div className="responsive-container-block bigContainer">
       <div className="responsive-container-block Container bottomContainer">
         <div className="ultimateImg">
-          <img
-            className="mainImg"
-            src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/mp4.svg"
-          />
-          <div className="purpleBox">
-            <p className="purpleText wow" data-splitting="">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget
-              purus lectus viverra in semper nec pretium mus.
-            </p>
-            <img
-              className="stars"
-              src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/mp5.svg"
-            />
-          </div>
+          <img className="mainImg" src={image} alt="solution" />
+          {!hidePurpleBox && (
+            <div className="purpleBox">
+              <p className="purpleText wow" data-splitting="">
+                {purpleText}
+              </p>
+              <img
+                className="stars"
+                src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/mp5.svg"
+                alt="stars"
+              />
+            </div>
+          )}
         </div>
+
         <div className="allText bottomText">
-          <p className="text-blk headingText">Solution & Stories</p>
+          <p className="text-blk headingText">{heading}</p>
           <h3 className="text-blk subHeadingText wow" data-splitting="">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            {subHeading}
           </h3>
+
           <p className="text-blk description wow" data-splitting="">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fermentum
-            pulvinar ullamcorper suspendisse ac eget. Pellentesque tempus leo in
-            ullamcorper quis vestibulum ligula elementum ut.
+            <strong>The Problem :</strong> {desc}
+            <br />
+            <br />
+            {problems.map((point, index) => (
+              <span key={index}>
+                • {point}
+                <br />
+              </span>
+            ))}
           </p>
-          <a className="explore">View Services</a>
+
+          <p className="text-blk description wow" data-splitting="">
+            <b>Our Solution :</b> {soluDesc}
+            <br />
+            <br />
+            {solutions.map((point, index) => (
+              <span key={index}>
+                • {point}
+                <br />
+              </span>
+            ))}
+          </p>
+
+          <br />
         </div>
       </div>
     </div>

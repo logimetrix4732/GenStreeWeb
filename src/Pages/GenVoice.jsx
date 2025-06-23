@@ -153,7 +153,7 @@ const GenVoice = () => {
         <section className="blog">
           <div className="container">
             <div className="row">
-              <div className="col-lg-9">
+              <div className="col-lg-12">
                 <div className="post">
                   <figure className="post-image">
                     <img src="images/works01.jpg" alt="Image" />
@@ -161,7 +161,7 @@ const GenVoice = () => {
                   <div className="post-content">
                     <small className="post-date">01, September 2022</small>
                     <h3 className="post-title">
-                      <a href="#">
+                      <a href="/SingleBlog">
                         Legally recognized as the only person who is authorized
                       </a>
                     </h3>
@@ -225,115 +225,7 @@ const GenVoice = () => {
                   </div>
                   {/* end post-content */}
                 </div>
-                {/* end post */}
-                <div className="post">
-                  <figure className="post-image">
-                    <img src="images/works03.jpg" alt="Image" />
-                  </figure>
-                  <div className="post-content">
-                    <small className="post-date">01, September 2022</small>
-                    <h3 className="post-title">
-                      <a href="#">
-                        Making one's living or making money by producing
-                      </a>
-                    </h3>
-                    <div className="post-author">
-                      <img src="images/avatar01.jpg" alt="Image" />
-                      <span>
-                        by <a href="#">Marcus Aurelio</a>
-                      </span>
-                    </div>
-                    {/* end post-author */}
-                    <ul className="post-categories">
-                      <li>
-                        <a href="#">DESIGN</a>
-                      </li>
-                      <li>
-                        <a href="#">ECOMMERCE</a>
-                      </li>
-                      <li>
-                        <a href="#">DIGITAL</a>
-                      </li>
-                    </ul>
-                    <a href="blog-single.html" className="post-link">
-                      READ MORE
-                    </a>
-                  </div>
-                  {/* end post-content */}
-                </div>
-                {/* end post */}
-                <div className="post">
-                  <figure className="post-image">
-                    <img src="images/works04.jpg" alt="Image" />
-                  </figure>
-                  <div className="post-content">
-                    <small className="post-date">01, September 2022</small>
-                    <h3 className="post-title">
-                      <a href="#">
-                        Simply put, it is "any activity or enterprise entered
-                      </a>
-                    </h3>
-                    <div className="post-author">
-                      <img src="images/avatar01.jpg" alt="Image" />
-                      <span>
-                        by <a href="#">Marcus Aurelio</a>
-                      </span>
-                    </div>
-                    {/* end post-author */}
-                    <ul className="post-categories">
-                      <li>
-                        <a href="#">DESIGN</a>
-                      </li>
-                      <li>
-                        <a href="#">ECOMMERCE</a>
-                      </li>
-                      <li>
-                        <a href="#">DIGITAL</a>
-                      </li>
-                    </ul>
-                    <a href="blog-single.html" className="post-link">
-                      READ MORE
-                    </a>
-                  </div>
-                  {/* end post-content */}
-                </div>
-                {/* end post */}
-                <div className="post">
-                  <figure className="post-image">
-                    <img src="images/works05.jpg" alt="Image" />
-                  </figure>
-                  <div className="post-content">
-                    <small className="post-date">01, September 2022</small>
-                    <h3 className="post-title">
-                      <a href="#">
-                        But this article will not deal with that sense of the
-                        word
-                      </a>
-                    </h3>
-                    <div className="post-author">
-                      <img src="images/avatar01.jpg" alt="Image" />
-                      <span>
-                        by <a href="#">Marcus Aurelio</a>
-                      </span>
-                    </div>
-                    {/* end post-author */}
-                    <ul className="post-categories">
-                      <li>
-                        <a href="#">DESIGN</a>
-                      </li>
-                      <li>
-                        <a href="#">ECOMMERCE</a>
-                      </li>
-                      <li>
-                        <a href="#">DIGITAL</a>
-                      </li>
-                    </ul>
-                    <a href="blog-single.html" className="post-link">
-                      READ MORE
-                    </a>
-                  </div>
-                  {/* end post-content */}
-                </div>
+
                 {/* end post */}
                 <ul className="pagination">
                   <li className="page-item">
@@ -348,132 +240,7 @@ const GenVoice = () => {
                   </li>
                 </ul>
               </div>
-              {/* end col-8 */}
-              <div className="col-lg-3">
-                <aside className="sidebar">
-                  <div className="widget">
-                    <h4 className="title">CATEGORIES</h4>
-                    <ul className="categories">
-                      <li>
-                        <span>14</span>
-                        <a href="#">Web Design</a>
-                      </li>
-                      <li>
-                        <span>22</span>
-                        <a href="#">Web Development</a>
-                      </li>
-                      <li>
-                        <span>74</span>
-                        <a href="#">e-Commerce</a>
-                      </li>
-                      <li>
-                        <span>4</span>
-                        <a href="#">Woo Commerce</a>
-                      </li>
-                      <li>
-                        <span>64</span>
-                        <a href="#">Wordpress</a>
-                      </li>
-                      <li>
-                        <span>53</span>
-                        <a href="#">App Development</a>
-                      </li>
-                      <li>
-                        <span>14</span>
-                        <a href="#">Print Design</a>
-                      </li>
-                    </ul>
-                  </div>
-                  {/* end widget */}
-                  <div className="widget">
-                    <h4 className="title">TOUROG</h4>
-                    <p>
-                      Interactive digital experiences are continually becoming
-                      more <u>amazing</u> and more <u>complex</u> to produce.
-                      Our team is specially designed to create successful
-                      digital products.
-                    </p>
-                  </div>
-                  {/* end widget */}
-                  <div className="widget">
-                    <h4 className="title">SEARCH</h4>
-                    <form>
-                      <input type="text" placeholder="Search on blog" />
-                      <button type="submit">SEARCH</button>
-                    </form>
-                  </div>
-                  {/* end widget */}
-                  <div className="widget">
-                    <h4 className="title">TAGS</h4>
-                    <ul className="tags">
-                      <li>
-                        <a href="#">Animation</a>
-                      </li>
-                      <li>
-                        <a href="#">Branding</a>
-                      </li>
-                      <li>
-                        <a href="#">Development</a>
-                      </li>
-                      <li>
-                        <a href="#">Apps for IOS</a>
-                      </li>
-                      <li>
-                        <a href="#">Creative</a>
-                      </li>
-                      <li>
-                        <a href="#">Direction</a>
-                      </li>
-                      <li>
-                        <a href="#">Product Design</a>
-                      </li>
-                      <li>
-                        <a href="#">UI-UX Design</a>
-                      </li>
-                      <li>
-                        <a href="#">Web Design</a>
-                      </li>
-                    </ul>
-                  </div>
-                  {/* end widget */}
-                  <div className="widget">
-                    <h4 className="title">WORKS</h4>
-                    <ul className="mini-works">
-                      <li>
-                        <a href="images/works01.jpg" data-fancybox="">
-                          <img src="images/works01.jpg" alt="Image" />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="images/works02.jpg" data-fancybox="">
-                          <img src="images/works02.jpg" alt="Image" />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="images/works03.jpg" data-fancybox="">
-                          <img src="images/works03.jpg" alt="Image" />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="images/works04.jpg" data-fancybox="">
-                          <img src="images/works04.jpg" alt="Image" />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="images/works05.jpg" data-fancybox="">
-                          <img src="images/works05.jpg" alt="Image" />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="images/works06.jpg" data-fancybox="">
-                          <img src="images/works06.jpg" alt="Image" />
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </aside>
-                {/* end sidebar */}
-              </div>
+
               {/* end col-4 */}
             </div>
             {/* end row */}

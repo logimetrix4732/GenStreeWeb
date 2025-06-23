@@ -57,7 +57,11 @@ const NavBar = () => {
               </a>
             </li>
             <li>
-              <a href="#">
+              <a
+                href="https://www.linkedin.com/in/genstree-ai-llp-724b98360/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <i className="fab fa-linkedin-in" />
               </a>
             </li>

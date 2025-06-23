@@ -81,11 +81,6 @@ const Dashboard = () => {
       <div className="slide-preview-prev">EDITORIAL</div>
       <div className="slide-preview-next">EXCLUSION</div>
 
-      <div className="slide-progress">
-        <span>01</span>
-        <div className="swiper-pagination" />
-        <span>03</span>
-      </div>
       <div className="swiper-button-prev">PREV</div>
       <div className="swiper-button-next">NEXT</div>
     </header>

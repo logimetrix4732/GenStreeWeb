@@ -22,18 +22,6 @@ const Home = () => {
   }, []);
   return (
     <React.Fragment>
-      <div className="preloader">
-        <div className="layer" />
-        <div className="inner">
-          <figure>
-            <img src={preloader} alt="Image" />
-          </figure>
-          <span>Site Loading</span>
-        </div>
-      </div>
-      <div className="page-transition">
-        <div className="layer" />
-      </div>
       <div className="social-media">
         <div className="layer"> </div>
         {/* end layer */}
@@ -95,9 +83,6 @@ const Home = () => {
       </div>
       <main>
         <NavBar />
-        <div className="all-cases-link">
-          <span>ALL CASES</span> <b>+</b>
-        </div>
         <Dashboard />
         <IntroAbout />
         <IntroImage />

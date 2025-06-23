@@ -139,7 +139,7 @@ const SingleBlog = () => {
           {/* end video-bg */}
           <div className="inner">
             <div className="container">
-              <h1>BLOG</h1>
+              <h1>GenVoice</h1>
               <p>
                 We provide a free day to experience our benefits of digital
                 world

@@ -1,157 +1,98 @@
 import React from "react";
 import NavBar from "../components/NavBar";
 import video02 from "../assets/videos/video02.mp4";
+import solutionImg from "../assets/images/solutionImg.png";
+import solutionImg1 from "../assets/images/solutionImg1.png";
+import solutionImg2 from "../assets/images/solutionImg2.png";
+import solutionImg3 from "../assets/images/solutionImg3.png";
 import AboutSolution from "../components/SolutionStoriesComponents/AboutSolution";
 import AboutSolution1 from "../components/SolutionStoriesComponents/AboutSolution1";
+
 const SolutionStories = () => {
+  const aboutSolutionData = {
+    image: solutionImg1,
+    purpleText:
+      "GenAssets is an AI-powered platform that transforms public asset management through predictive maintenance, real-time monitoring, and QR-based field verification—built for smarter governance and sustainable infrastructure.",
+    heading: "GenAssets –",
+    subHeading: "AI-Driven Public Asset Management",
+    desc: " Municipal bodies, panchayats, and solar plant operators face.",
+    soluDesc: "GenAssets simplifies and future-proofs asset oversight.",
+    problems: [
+      "Asset overuse or underuse",
+      "Manual data entry with no predictive logic",
+      "Delays in fault reporting or inspection",
+    ],
+    solutions: [
+      "AI-Powered Optimization Engine – Predicts maintenance & replacement.",
+      "Dashboard for Condition-Based Monitoring – Tracks health, usage, value.",
+      "QR-Tagged Field Assets – Scan-based verification and audit logs.",
+      "Built for Governance & Green Energy – Custom-built modules for solar, water, and civic infrastructure.",
+    ],
+  };
+  const aboutSolution1Data = {
+    heading: "Good Crop –",
+    subHeading: "Crop Disaster Intelligence & Yield Forecasting",
+    problemIntro: "Farmers and policymakers need proactive tools to.",
+    problems: [
+      "Detect crop stress early (e.g. pest, water, disease)",
+      "Assess NDVI deviation patterns for pre-disaster alerts",
+      "Predict yield based on live satellite imagery",
+    ],
+    solutionIntro:
+      "GenCrest is a data-driven platform under active R&D, focused on future-ready agricultural intelligence.",
+    solutions: [
+      "Sentinel-2 Based NDVI Monitoring – Live vegetation index mapping to understand crop behavior over time.",
+      "Early Yield Prediction R&D – Collecting NDVI datasets to model sugarcane productivity.",
+      "Disaster Signal Exploration – Studying NDVI trends to flag pest stress, drought, and other anomalies.",
+      "Integration-ready APIs – For future expansion to crop insurance, alerting systems, and dashboards.",
+    ],
+    author: {
+      name: "Rahul Kumar Yadav",
+      role: "Web Developer",
+      image: solutionImg2,
+    },
+  };
+  const aboutSolution2Data = {
+    image: solutionImg,
+    purpleText:
+      "GenAssets is an AI-powered platform that transforms public asset management through predictive maintenance, real-time monitoring, and QR-based field verification—built for smarter governance and sustainable infrastructure.",
+    heading: "GenGIS –",
+    subHeading: "Geo-Intelligence for Field & Asset Tracking",
+    desc: "Field employees, agricultural staff, and solar site technicians often lack.",
+    soluDesc: "GenGIS empowers teams and administrators with.",
+    problems: [
+      "Accurate location check-ins",
+      "Real-time leave/route visibility",
+      "Asset mapping integrated with geolocation",
+    ],
+    solutions: [
+      "Selfie + Geo Attendance – For both office and field staff.",
+      "Smart Route Planning – Optimized for solar and civic field operations.",
+      "Branch-Level User Management – Centralized admin dashboard.",
+    ],
+  };
+
   return (
-    <>
-      <div className="preloader">
-        <div className="layer" />
-        {/* end layer */}
-        <div className="inner">
-          <figure>
-            {" "}
-            <img src="images/preloader.gif" alt="Image" />{" "}
-          </figure>
-          <span>Site Loading</span>{" "}
-        </div>
-        {/* end inner */}
-      </div>
-      {/* end preloader */}
-      <div className="page-transition">
-        <div className="layer" />
-        {/* end layer */}
-      </div>
-      {/* end page-transition */}
-      <nav className="site-navigation">
-        <div className="layer" />
-        {/* end layer */}
-        <div className="inner">
-          <ul data-splitting="">
-            <li>
-              <a href="index.html">HOME</a>
-              <i className="fas fa-caret-down" /> <small>First page</small>
-              <ul>
-                <li>
-                  <a href="index.html">HOME SLIDER</a>
-                </li>
-                <li>
-                  <a href="index-video.html">HOME VIDEO</a>
-                </li>
-                <li>
-                  <a href="index-carousel.html">HOME CAROUSEL</a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a href="studio.html">STUDIO</a> <small>All About Us</small>{" "}
-            </li>
-            <li>
-              <a href="showcases.html">SHOWCASES</a>{" "}
-              <small>Our all projects</small>{" "}
-            </li>
-            <li>
-              <a href="blog.html">BLOG</a> <small>Recent posts</small>{" "}
-            </li>
-            <li>
-              <a href="contact.html">CONTACT</a> <small>Say hello</small>{" "}
-            </li>
-          </ul>
-        </div>
-        {/* end inner */}
-      </nav>
-      {/* end site-navigation */}
-      <div className="social-media">
-        <div className="layer"> </div>
-        {/* end layer */}
-        <div className="inner">
-          <h5>Social Share </h5>
-          <ul>
-            <li>
-              <a href="#">
-                <i className="fab fa-facebook-f" />
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i className="fab fa-twitter" />
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i className="fab fa-linkedin-in" />
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i className="fab fa-google-plus-g" />
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i className="fab fa-youtube" />
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      {/* end social-media */}
-      <div className="all-cases">
-        <div className="layer"> </div>
-        {/* end layer */}
-        <div className="inner">
-          <ul>
-            <li>
-              <a href="#">Darkness</a>
-            </li>
-            <li>
-              <a href="#">Goddes</a>
-            </li>
-            <li>
-              <a href="#">Employee</a>
-            </li>
-            <li>
-              <a href="#">Berry</a>
-            </li>
-            <li>
-              <a href="#">Roosters</a>
-            </li>
-            <li>
-              <a href="#">Primero</a>
-            </li>
-          </ul>
-        </div>
-        {/* end inner */}
-      </div>
-      {/* end all-cases */}
+    <React.Fragment>
       <main>
         <NavBar />
-
-        {/* end left-side */}
-        <div className="all-cases-link">
-          {" "}
-          <span>ALL CASES</span> <b>+</b>{" "}
-        </div>
-        {/* end all-cases-link */}
         <header className="page-header">
           <div className="video-bg">
             <video src={video02} loop autoPlay playsInline />
           </div>
-          {/* end video-bg */}
           <div className="inner">
             <div className="container">
               <h1>Solution & Stories</h1>
               <p>
-                We provide a free day to experience our benefits of digital
-                world
+                GenStree transforms ordinary streetlights into smart,
+                energy-saving solutions — a step toward safer and smarter
+                cities.
               </p>
             </div>
+
             {/* end container */}
           </div>
-          {/* end inner */}
         </header>
-        {/* end page-header */}
         <div
           className="works"
           style={{
@@ -161,15 +102,15 @@ const SolutionStories = () => {
             alignItems: "center",
           }}
         >
-          <AboutSolution />
-          <AboutSolution1 />
+          <AboutSolution aboutSolutionData={aboutSolutionData} />
+          <AboutSolution1 aboutSolution1Data={aboutSolution1Data} />
+          <AboutSolution
+            aboutSolutionData={aboutSolution2Data}
+            hidePurpleBox={true}
+          />
         </div>
-        {/* end clients */}
       </main>
-      {/* end main */}
-      {/* end footer */}
-      {/* JS FILES */}
-    </>
+    </React.Fragment>
   );
 };
 

@@ -8,6 +8,8 @@ import aboutImg from "../assets/images/aboutImg.png";
 import logo from "../assets/images/logo.jpg";
 import logo01 from "../assets/images/logo01.jpg";
 import AboutSolution2 from "../components/SolutionStoriesComponents/AboutSolution2";
+import richaRai from "../assets/images/richaRai.jpg";
+
 const Studio = () => {
   const sectionRef = useRef(null);
   const odometers = useRef([]);
@@ -48,7 +50,7 @@ const Studio = () => {
             {" "}
             <img src="images/preloader.gif" alt="Image" />{" "}
           </figure>
-          <span>Site Loading</span>{" "}
+          <span>GenStree Loading</span>{" "}
         </div>
         {/* end inner */}
       </div>
@@ -128,10 +130,7 @@ const Studio = () => {
       <main>
         <NavBar />
         {/* end left-side */}
-        <div className="all-cases-link">
-          {" "}
-          <span>ALL CASES</span> <b>+</b>{" "}
-        </div>
+
         {/* end all-cases-link */}
         <header className="page-header">
           <div className="video-bg">
@@ -348,10 +347,10 @@ const Studio = () => {
                       </a>
                     </li>
                   </ul>
-                  <img src="images/team01.jpg" alt="Image" />
+                  <img src={richaRai} alt="Image" />
                   <figcaption className="wow" data-splitting="">
                     {" "}
-                    <h6>Alexander O'neil</h6> <small>EXECUTIVE CHIEF</small>{" "}
+                    <h6>Richa Rai</h6> <small>EXECUTIVE CHIEF</small>{" "}
                   </figcaption>
                 </figure>
               </div>
@@ -375,10 +374,10 @@ const Studio = () => {
                       </a>
                     </li>
                   </ul>
-                  <img src="images/team02.jpg" alt="Image" />
+                  <img src={richaRai} alt="Image" />
                   <figcaption className="wow" data-splitting="">
                     {" "}
-                    <h6>Jessica Tanana</h6> <small>SENIOR ENGINEER</small>{" "}
+                    <h6>Richa Rai</h6> <small>SENIOR ENGINEER</small>{" "}
                   </figcaption>
                 </figure>
               </div>
@@ -402,10 +401,10 @@ const Studio = () => {
                       </a>
                     </li>
                   </ul>
-                  <img src="images/team03.jpg" alt="Image" />
+                  <img src={richaRai} alt="Image" />
                   <figcaption className="wow" data-splitting="">
                     {" "}
-                    <h6>Steven Mc'Laren</h6> <small>CREATIVE HEAD CHIEF</small>{" "}
+                    <h6>Richa Rai</h6> <small>CREATIVE HEAD CHIEF</small>{" "}
                   </figcaption>
                 </figure>
               </div>
@@ -429,10 +428,10 @@ const Studio = () => {
                       </a>
                     </li>
                   </ul>
-                  <img src="images/team04.jpg" alt="Image" />
+                  <img src={richaRai} alt="Image" />
                   <figcaption className="wow" data-splitting="">
                     {" "}
-                    <h6>Dasha Avdeieva</h6> <small>ACCOUNT MANAGER</small>{" "}
+                    <h6>Richa Rai</h6> <small>ACCOUNT MANAGER</small>{" "}
                   </figcaption>
                 </figure>
               </div>
@@ -456,10 +455,10 @@ const Studio = () => {
                       </a>
                     </li>
                   </ul>
-                  <img src="images/team05.jpg" alt="Image" />
+                  <img src={richaRai} alt="Image" />
                   <figcaption className="wow" data-splitting="">
                     {" "}
-                    <h6>Dmitry Samohin</h6> <small>DIGITAL PRODUCER</small>{" "}
+                    <h6>Richa Rai</h6> <small>DIGITAL PRODUCER</small>{" "}
                   </figcaption>
                 </figure>
               </div>

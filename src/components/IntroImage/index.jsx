@@ -69,7 +69,6 @@ const IntroImage = () => {
                 {/* end swiper-slide */}
               </div>
               {/* end swiper-wrapper */}
-              <div className="swiper-pagination" />
               {/* end swiper-pagination */}
             </div>
             {/* end office-slider */}
