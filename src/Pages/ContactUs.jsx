@@ -4,18 +4,6 @@ import NavBar from "../components/NavBar";
 const ContactUs = () => {
   return (
     <>
-      <div className="preloader">
-        <div className="layer" />
-        {/* end layer */}
-        <div className="inner">
-          <figure>
-            {" "}
-            <img src="images/preloader.gif" alt="Image" />{" "}
-          </figure>
-          <span>Site Loading</span>{" "}
-        </div>
-        {/* end inner */}
-      </div>
       {/* end preloader */}
       <div className="page-transition">
         <div className="layer" />
@@ -125,11 +113,7 @@ const ContactUs = () => {
       {/* end all-cases */}
       <main>
         <NavBar />
-        {/* end left-side */}
-        <div className="all-cases-link">
-          {" "}
-          <span>ALL CASES</span> <b>+</b>{" "}
-        </div>
+
         {/* end all-cases-link */}
         <header className="page-header">
           <div className="video-bg">
@@ -162,17 +146,20 @@ const ContactUs = () => {
               <div className="col-lg-4 col-md-6">
                 <h6>HEAD OFFICE</h6>
                 <address>
-                  Boryssa Himry 124 B Block Pozniaky
+                  3/204, Vikaskhand 3, Vikas Khand,
                   <br />
-                  Kiev - UKRAINE
+                  Gomti Nagar, Lucknow,
+                  <br />
+                  Uttar Pradesh 226010
                 </address>
               </div>
               {/* end col-4 */}
               <div className="col-lg-3 col-md-6">
                 <h6>REACH US</h6>
                 <address>
-                  <p>+38 02 237 24 21</p>
-                  <a href="#">hello@tourog.com.ua</a>
+                  <p>+91 (993)-554-0006</p>
+                  <p>+91 (993)-587-6555</p>
+                  <a href="#">info@genstreetech.com</a>
                 </address>
               </div>
               {/* end col-3 */}

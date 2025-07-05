@@ -5,18 +5,6 @@ import AboutSolution from "../components/SolutionStoriesComponents/AboutSolution
 const ShowCase = () => {
   return (
     <>
-      <div className="preloader">
-        <div className="layer" />
-        {/* end layer */}
-        <div className="inner">
-          <figure>
-            {" "}
-            <img src="images/preloader.gif" alt="Image" />{" "}
-          </figure>
-          <span>Site Loading</span>{" "}
-        </div>
-        {/* end inner */}
-      </div>
       {/* end preloader */}
       <div className="page-transition">
         <div className="layer" />
@@ -44,17 +32,17 @@ const ShowCase = () => {
               </ul>
             </li>
             <li>
-              <a href="studio.html">STUDIO</a> <small>All About Us</small>{" "}
+              <a href="studio.html">STUDIO</a> <small>All About Us</small>
             </li>
             <li>
-              <a href="showcases.html">SHOWCASES</a>{" "}
-              <small>Our all projects</small>{" "}
+              <a href="showcases.html">SHOWCASES</a>
+              <small>Our all projects</small>
             </li>
             <li>
-              <a href="blog.html">BLOG</a> <small>Recent posts</small>{" "}
+              <a href="blog.html">BLOG</a> <small>Recent posts</small>
             </li>
             <li>
-              <a href="contact.html">CONTACT</a> <small>Say hello</small>{" "}
+              <a href="contact.html">CONTACT</a> <small>Say hello</small>
             </li>
           </ul>
         </div>
@@ -129,8 +117,7 @@ const ShowCase = () => {
 
         {/* end left-side */}
         <div className="all-cases-link">
-          {" "}
-          <span>ALL CASES</span> <b>+</b>{" "}
+          <span>ALL CASES</span> <b>+</b>
         </div>
         {/* end all-cases-link */}
         <header className="page-header">
@@ -160,23 +147,21 @@ const ShowCase = () => {
           <ul>
             <li>
               <figure className="reveal-effect masker wow">
-                {" "}
                 <a href="case-single.html">
                   <img src="images/works01.jpg" alt="Image" />
-                </a>{" "}
+                </a>
               </figure>
               <div className="caption wow" data-splitting="">
                 <h3>Darkness Vehicle</h3>
-                <small>DIGITAL, PRINT, DEVELOPMENT</small>{" "}
+                <small>DIGITAL, PRINT, DEVELOPMENT</small>
               </div>
               {/* end caption */}
             </li>
             <li>
               <figure className="reveal-effect masker wow">
-                {" "}
                 <a href="case-single.html">
                   <img src="images/works02.jpg" alt="Image" />
-                </a>{" "}
+                </a>
               </figure>
               <div className="caption wow" data-splitting="">
                 <h3>Goddes Cover Art</h3>
@@ -186,92 +171,85 @@ const ShowCase = () => {
             </li>
             <li>
               <figure className="reveal-effect masker wow">
-                {" "}
                 <a href="case-single.html">
                   <img src="images/works03.jpg" alt="Image" />
-                </a>{" "}
+                </a>
               </figure>
               <div className="caption wow" data-splitting="">
                 <h3>Hard Employee</h3>
-                <small>WEB, DIGITAL, DEVELOPMENT</small>{" "}
+                <small>WEB, DIGITAL, DEVELOPMENT</small>
               </div>
               {/* end caption */}
             </li>
             <li>
               <figure className="reveal-effect masker wow">
-                {" "}
                 <a href="case-single.html">
                   <img src="images/works04.jpg" alt="Image" />
-                </a>{" "}
+                </a>
               </figure>
               <div className="caption wow" data-splitting="">
                 <h3>Construction Man</h3>
-                <small>DIGITAL, PRINT, DEVELOPMENT</small>{" "}
+                <small>DIGITAL, PRINT, DEVELOPMENT</small>
               </div>
               {/* end caption */}
             </li>
             <li>
               <figure className="reveal-effect masker wow">
-                {" "}
                 <a href="case-single.html">
                   <img src="images/works05.jpg" alt="Image" />
-                </a>{" "}
+                </a>
               </figure>
               <div className="caption wow" data-splitting="">
                 <h3>King of Roosters</h3>
-                <small>PRINT, DIGITAL, DEVELOPMENT</small>{" "}
+                <small>PRINT, DIGITAL, DEVELOPMENT</small>
               </div>
               {/* end caption */}
             </li>
             <li>
               <figure className="reveal-effect masker wow">
-                {" "}
                 <a href="case-single.html">
-                  <img src="images/works06.jpg" alt="Image" />{" "}
+                  <img src="images/works06.jpg" alt="Image" />
                 </a>
               </figure>
               <div className="caption wow" data-splitting="">
                 <h3>Primero Car</h3>
-                <small>WEB, DIGITAL, DEVELOPMENT</small>{" "}
+                <small>WEB, DIGITAL, DEVELOPMENT</small>
               </div>
               {/* end caption */}
             </li>
             <li>
               <figure className="reveal-effect masker wow">
-                {" "}
                 <a href="case-single.html">
                   <img src="images/works07.jpg" alt="Image" />
-                </a>{" "}
+                </a>
               </figure>
               <div className="caption wow" data-splitting="">
                 <h3>Sweet Berry Pie</h3>
-                <small>DIGITAL, PRINT, DEVELOPMENT</small>{" "}
+                <small>DIGITAL, PRINT, DEVELOPMENT</small>
               </div>
               {/* end caption */}
             </li>
             <li>
               <figure className="reveal-effect masker wow">
-                {" "}
                 <a href="case-single.html">
                   <img src="images/works08.jpg" alt="Image" />
-                </a>{" "}
+                </a>
               </figure>
               <div className="caption wow" data-splitting="">
                 <h3>Iron Swimmer</h3>
-                <small>PRINT, DIGITAL, DEVELOPMENT</small>{" "}
+                <small>PRINT, DIGITAL, DEVELOPMENT</small>
               </div>
               {/* end caption */}
             </li>
             <li>
               <figure className="reveal-effect masker wow">
-                {" "}
                 <a href="case-single.html">
-                  <img src="images/works09.jpg" alt="Image" />{" "}
+                  <img src="images/works09.jpg" alt="Image" />
                 </a>
               </figure>
               <div className="caption wow" data-splitting="">
                 <h3>Plants Women</h3>
-                <small>WEB, DIGITAL, DEVELOPMENT</small>{" "}
+                <small>WEB, DIGITAL, DEVELOPMENT</small>
               </div>
               {/* end caption */}
             </li>
@@ -281,10 +259,9 @@ const ShowCase = () => {
         <section className="clients">
           <div className="container">
             <div className="row">
-              {" "}
               <div className="col-lg-5 wow" data-splitting="">
                 <h3 className="section-title">
-                  AGENSY PROUD
+                  Agency PROUD
                   <br />
                   IS QUALITY OF
                   <br />
@@ -295,40 +272,31 @@ const ShowCase = () => {
               <div className="col-lg-7">
                 <ul>
                   <li className="reveal-effect masker wow">
-                    {" "}
-                    <img src="images/logo01.png" alt="Image" />{" "}
+                    <img src="images/logo01.png" alt="Image" />
                   </li>
                   <li className="reveal-effect masker wow">
-                    {" "}
-                    <img src="images/logo02.png" alt="Image" />{" "}
+                    <img src="images/logo02.png" alt="Image" />
                   </li>
                   <li className="reveal-effect masker wow">
-                    {" "}
-                    <img src="images/logo03.png" alt="Image" />{" "}
+                    <img src="images/logo03.png" alt="Image" />
                   </li>
                   <li className="reveal-effect masker wow">
-                    {" "}
-                    <img src="images/logo04.png" alt="Image" />{" "}
+                    <img src="images/logo04.png" alt="Image" />
                   </li>
                   <li className="reveal-effect masker wow">
-                    {" "}
-                    <img src="images/logo05.png" alt="Image" />{" "}
+                    <img src="images/logo05.png" alt="Image" />
                   </li>
                   <li className="reveal-effect masker wow">
-                    {" "}
-                    <img src="images/logo06.png" alt="Image" />{" "}
+                    <img src="images/logo06.png" alt="Image" />
                   </li>
                   <li className="reveal-effect masker wow">
-                    {" "}
-                    <img src="images/logo07.png" alt="Image" />{" "}
+                    <img src="images/logo07.png" alt="Image" />
                   </li>
                   <li className="reveal-effect masker wow">
-                    {" "}
-                    <img src="images/logo08.png" alt="Image" />{" "}
+                    <img src="images/logo08.png" alt="Image" />
                   </li>
                   <li className="reveal-effect masker wow">
-                    {" "}
-                    <img src="images/logo09.png" alt="Image" />{" "}
+                    <img src="images/logo09.png" alt="Image" />
                   </li>
                 </ul>
               </div>

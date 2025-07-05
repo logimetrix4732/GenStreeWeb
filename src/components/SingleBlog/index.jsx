@@ -1,21 +1,12 @@
 import React from "react";
 import NavBar from "../NavBar";
+import newsImg from "../../assets/images/newsImg.png";
+import newsImg3 from "../../assets/images/newsImg3.png";
+import newsImg4 from "../../assets/images/newsImg4.png";
 
 const SingleBlog = () => {
   return (
     <>
-      <div className="preloader">
-        <div className="layer" />
-        {/* end layer */}
-        <div className="inner">
-          <figure>
-            {" "}
-            <img src="images/preloader.gif" alt="Image" />{" "}
-          </figure>
-          <span>Site Loading</span>{" "}
-        </div>
-        {/* end inner */}
-      </div>
       {/* end preloader */}
       <div className="page-transition">
         <div className="layer" />
@@ -59,69 +50,7 @@ const SingleBlog = () => {
         </div>
         {/* end inner */}
       </nav>
-      {/* end site-navigation */}
-      <div className="social-media">
-        <div className="layer"> </div>
-        {/* end layer */}
-        <div className="inner">
-          <h5>Social Share </h5>
-          <ul>
-            <li>
-              <a href="#">
-                <i className="fab fa-facebook-f" />
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i className="fab fa-twitter" />
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i className="fab fa-linkedin-in" />
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i className="fab fa-google-plus-g" />
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i className="fab fa-youtube" />
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      {/* end social-media */}
-      <div className="all-cases">
-        <div className="layer"> </div>
-        {/* end layer */}
-        <div className="inner">
-          <ul>
-            <li>
-              <a href="#">Darkness</a>
-            </li>
-            <li>
-              <a href="#">Goddes</a>
-            </li>
-            <li>
-              <a href="#">Employee</a>
-            </li>
-            <li>
-              <a href="#">Berry</a>
-            </li>
-            <li>
-              <a href="#">Roosters</a>
-            </li>
-            <li>
-              <a href="#">Primero</a>
-            </li>
-          </ul>
-        </div>
-        {/* end inner */}
-      </div>
+
       {/* end all-cases */}
       <main>
         <NavBar />
@@ -156,62 +85,26 @@ const SingleBlog = () => {
               <div className="col-lg-10">
                 <div className="post single">
                   <figure className="post-image">
-                    <img src="images/slide01.jpg" alt="Image" />
+                    <img src={newsImg} alt="Image" />
                   </figure>
                   <div className="post-content">
-                    <small className="post-date">01, September 2022</small>
+                    <small className="post-date">21, June 2025</small>
                     <h3 className="post-title">
-                      Legally recognized as the only person who is authorized
+                      Smart Villages: Climate insights, Technology Shifting and
+                      Transforming Agriculture in India
                     </h3>
-                    <div className="post-author">
-                      <img src="images/avatar01.jpg" alt="Image" />
-                      <span>
-                        by <a href="#">Marcus Aurelio</a>
-                      </span>
-                    </div>
-                    {/* end post-author */}
-                    <ul className="post-categories">
-                      <li>
-                        <a href="#">DESIGN</a>
-                      </li>
-                      <li>
-                        <a href="#">ECOMMERCE</a>
-                      </li>
-                      <li>
-                        <a href="#">DIGITAL</a>
-                      </li>
-                    </ul>
-                    <ul className="social-share">
-                      <li className="facebook">
-                        <a href="#">
-                          <i className="fab fa-facebook-f" />
-                        </a>
-                      </li>
-                      <li className="twitter">
-                        <a href="#">
-                          <i className="fab fa-twitter" />
-                        </a>
-                      </li>
-                      <li className="google-plus">
-                        <a href="#">
-                          <i className="fab fa-google-plus-g" />
-                        </a>
-                      </li>
-                      <li className="linkedin">
-                        <a href="#">
-                          <i className="fab fa-linkedin-in" />
-                        </a>
-                      </li>
-                      <li className="youtube">
-                        <a href="#">
-                          <i className="fab fa-youtube" />
-                        </a>
-                      </li>
-                    </ul>
+
                     <p>
-                      Design is our playground. While we create an awesome
-                      experience, we like having fun. No animals were harmed, no
-                      bridges were burned during our parties.
+                      India is building smart villages by combining
+                      climate-smart farming, new technologies, and better ways
+                      to grow crops. As weather patterns become less
+                      predictable, farmers are using local data to choose
+                      stronger crops and save water. AI enabled apps and sensors
+                      help them make faster, smarter decisions in the field.
+                      These villages are also using solar energy, supporting
+                      farmer groups (FPOs), and connecting farmers through
+                      digital platforms—helping create stronger, more
+                      sustainable rural communities.
                     </p>
                     <p>
                       Inhabit hearing perhaps on ye do no. It maids decay as
@@ -232,7 +125,15 @@ const SingleBlog = () => {
                       be do on service.{" "}
                     </p>
                     <figure className="image-left">
-                      <img src="images/works01.jpg" alt="Image" />
+                      <img
+                        src={newsImg4}
+                        alt="Image"
+                        style={{
+                          width: "386px",
+                          height: "495px",
+                          objectFit: "cover",
+                        }}
+                      />
                     </figure>
                     <p>
                       Resources exquisite set arranging moonlight sex him
@@ -320,7 +221,7 @@ const SingleBlog = () => {
                       bed out sincerity.{" "}
                     </p>
                     <figure className="image-full">
-                      <img src="images/office02.jpg" alt="Image" />
+                      <img src={newsImg3} alt="Image" />
                     </figure>
                     <p>
                       Saw yet kindness too replying whatever marianne. Old

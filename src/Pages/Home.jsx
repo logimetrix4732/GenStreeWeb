@@ -6,7 +6,6 @@ import Dashboard from "../components/Dashboard";
 import IntroAbout from "../components/IntroAbout";
 import IntroImage from "../components/IntroImage";
 import WorksImages from "../components/WorksImages";
-import preloader from "../assets/images/preloader.gif";
 import WeAreAbleToDo from "../components/WeAreAbleToDo";
 import "animate.css";
 import "../styles/slider.css";

@@ -4,18 +4,6 @@ import NavBar from "../NavBar";
 const SingleShowCase = () => {
   return (
     <>
-      <div className="preloader">
-        <div className="layer" />
-        {/* end layer */}
-        <div className="inner">
-          <figure>
-            {" "}
-            <img src="images/preloader.gif" alt="Image" />{" "}
-          </figure>
-          <span>Site Loading</span>{" "}
-        </div>
-        {/* end inner */}
-      </div>
       {/* end preloader */}
       <div className="page-transition">
         <div className="layer" />

@@ -49,12 +49,7 @@ const Footer = () => {
               <span className="copyright">
                 © 2025 GenStree AI LLP. All rights reserved.
               </span>{" "}
-              <span className="creation">
-                Site created by{" "}
-                <a href="https://logimetrix.co.in" target="_blank">
-                  Crafted with precision by Logimetrix Tech Solution
-                </a>
-              </span>{" "}
+              <span className="creation"></span>{" "}
             </div>
             {/* end footer-bar */}
           </div>

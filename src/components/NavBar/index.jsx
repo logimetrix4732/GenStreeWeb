@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import logoWeb from "../../assets/images/logoWeb1.png";
+import logoWeb from "../../assets/images/logoWeb.png";
+import genstreeLogo from "../../assets/images/genstreeLogo.png";
 const NavBar = () => {
   const [isNavigationOpen, setIsNavigationOpen] = useState(false);
   const [isEqualizerPaused, setIsEqualizerPaused] = useState(false);
@@ -109,20 +110,20 @@ const NavBar = () => {
         <div className="inner">
           <ul data-splitting="">
             <li>
-              <a href="/aboutUs">About Us</a>
-              <small>Who we are</small>
+              <a href="/aboutUs">Who we are</a>
+              <small>About Us</small>
             </li>
             <li>
-              <a href="/solution">Solutions & Stories</a>
-              <small>Explore our expertise</small>
+              <a href="/solution">Explore our expertise</a>
+              <small>Solutions & Stories</small>
             </li>
             <li>
-              <a href="/GenVoice">GenVoice</a>
-              <small>Latest insights & updates</small>
+              <a href="/GenVoice">GenStree AI bulletin</a>
+              <small>News letter</small>
             </li>
             <li>
-              <a href="/contactUs">CONTACT</a>
-              <small>Get in touch with us</small>
+              <a href="/contactUs">Get in touch with us</a>
+              <small>Contact US</small>
             </li>
           </ul>
         </div>
@@ -133,14 +134,13 @@ const NavBar = () => {
         <div className="logo">
           <a href="/">
             <img
-              src={logoWeb}
+              src={genstreeLogo}
               alt="Image"
               style={{
                 maxHeight: "100px",
                 maxWidth: "100%",
-                height: "auto",
+                height: "120px",
                 width: "auto",
-                borderRadius: "50%",
               }}
             />
           </a>
@@ -176,14 +176,18 @@ const NavBar = () => {
           className={`equalizer ${isEqualizerPaused ? "paused" : ""}`}
           onClick={toggleEqualizer}
         >
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
+          {[...Array(6)].map((_, i) => (
+            <span
+              key={i}
+              style={{
+                background: "linear-gradient(to top, #b27bea, #4770f5)",
+                width: "3px",
+
+                transition: "height 0.2s linear",
+              }}
+            ></span>
+          ))}
         </div>
-        {/* end equalizer */}
       </aside>
     </React.Fragment>
   );

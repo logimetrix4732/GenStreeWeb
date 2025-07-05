@@ -1,4 +1,5 @@
 import React from "react";
+import aboutbg from "../../assets/images/aboutbg1.jpg";
 
 const IntroAbout = () => {
   return (
@@ -7,7 +8,7 @@ const IntroAbout = () => {
         <div className="row">
           <div className="col-lg-5 wow" data-splitting="">
             <h3 className="section-title">
-              Empowering Women in STEM, AI & Innovation
+              Empowering Women and their abilities, AI & Innovation
             </h3>
             <a href="mailto:connect@genstree.com">connect@genstree.com</a>
           </div>

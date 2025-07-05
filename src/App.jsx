@@ -9,6 +9,7 @@ import NavBar from "./components/NavBar";
 import GenVoice from "./Pages/GenVoice";
 import Footer from "./components/Footer";
 import SolutionStories from "./Pages/SolutionStories";
+import AIBreakfast from "./Pages/AIBreakfast";
 
 function App() {
   return (
@@ -30,10 +31,11 @@ function App() {
         <Route path="/aboutUs" element={<Studio />} />
         <Route path="/genVoice" element={<GenVoice />} />
         <Route path="/solution" element={<SolutionStories />} />
-        <Route path="/singleBlog" element={<SingleBlog />} />
+        <Route path="/blog/:id" element={<SingleBlog />} />
         <Route path="/contactUs" element={<ContactUs />} />
         <Route path="/popper" element={<Popper />} />
         <Route path="/Navbar" element={<NavBar />} />
+        <Route path="/AI" element={<AIBreakfast />} />
       </Routes>
       <Footer />
     </Router>

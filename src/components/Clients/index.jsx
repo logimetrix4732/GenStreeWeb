@@ -15,7 +15,7 @@ const Clients = () => {
         <div className="row">
           <div className="col-lg-5 wow" data-splitting="">
             <h3 className="section-title">
-              AGENSY PROUD
+              Agency PROUD
               <br />
               IS QUALITY OF
               <br />

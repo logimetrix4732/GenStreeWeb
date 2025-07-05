@@ -4,10 +4,9 @@ import video02 from "../assets/videos/video02.mp4";
 import solutionImg from "../assets/images/solutionImg.png";
 import solutionImg1 from "../assets/images/solutionImg1.png";
 import solutionImg2 from "../assets/images/solutionImg2.png";
-import solutionImg3 from "../assets/images/solutionImg3.png";
+import solutionImg4 from "../assets/images/solutionImg4.png";
 import AboutSolution from "../components/SolutionStoriesComponents/AboutSolution";
 import AboutSolution1 from "../components/SolutionStoriesComponents/AboutSolution1";
-
 const SolutionStories = () => {
   const aboutSolutionData = {
     image: solutionImg1,
@@ -39,7 +38,7 @@ const SolutionStories = () => {
       "Predict yield based on live satellite imagery",
     ],
     solutionIntro:
-      "GenCrest is a data-driven platform under active R&D, focused on future-ready agricultural intelligence.",
+      "Good Crop is a data-driven platform under active R&D, focused on future-ready agricultural intelligence.",
     solutions: [
       "Sentinel-2 Based NDVI Monitoring – Live vegetation index mapping to understand crop behavior over time.",
       "Early Yield Prediction R&D – Collecting NDVI datasets to model sugarcane productivity.",
@@ -76,10 +75,15 @@ const SolutionStories = () => {
     <React.Fragment>
       <main>
         <NavBar />
-        <header className="page-header">
-          <div className="video-bg">
-            <video src={video02} loop autoPlay playsInline />
-          </div>
+        <header
+          className="page-header"
+          // style={{
+          //   backgroundImage: `url(${solutionImg4})`,
+          //   backgroundSize: "cover",
+          //   backgroundPosition: "center",
+          //   backgroundRepeat: "no-repeat",
+          // }}
+        >
           <div className="inner">
             <div className="container">
               <h1>Solution & Stories</h1>
